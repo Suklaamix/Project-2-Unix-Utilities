@@ -16,10 +16,8 @@ int main(int argc, char *argv[]){
                 printf("%s", line);
             }
         }
-        fclose(file);
     }else {
         for (int i = 2; i < argc; i++){
-            
             FILE *file = fopen(argv[i], "r");
             if (file == NULL){
                 printf("my-grep: cannot open file %s\n", argv[i]);
